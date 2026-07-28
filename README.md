@@ -13,9 +13,23 @@ The system allows security analysts to observe attacker behaviors, extract Indic
 ## Architecture
 
 ```
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f8e12bf4-1a1d-4d15-ad1c-171c34bf70c1" />
-
-
+Internet Attacker
+│
+▼
+T-Pot Honeypot (Cowrie, ...)
+│
+│ Log Events
+▼
+Wazuh Manager
+│
+├── Detection Rules
+├── Log Analysis
+├── IOC Extraction
+▼
+OpenSearch Dashboard
+│
+▼
+Security Analyst
 ## Features
 
 - Deploy Honeypot using the T-Pot platform
